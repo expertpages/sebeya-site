@@ -486,4 +486,10 @@ a:hover { color: var(--primary-dark); }
   .pains-grid, .features-grid, .reviews-grid, .steps, .plan-cards, .compare-grid { grid-template-columns: 1fr; }
   .main-nav { display: none; }
   .compare-gain { gap: 14px; }
+
+  /* Шапка на телефоне: всё помещается с отступами от краёв */
+  .header-inner { padding: 10px 0; }
+  .logo { font-size: 24px; letter-spacing: 2px; }
+  .logo-dot { width: 11px; height: 11px; }
+  .header-cta { padding: 8px 14px; font-size: 13px; }
 }
