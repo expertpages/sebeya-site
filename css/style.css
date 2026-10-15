@@ -374,31 +374,6 @@ a:hover { color: var(--primary-dark); }
 .review p { font-size: 15px; flex: 1; }
 .review .author { font-size: 14px; color: var(--muted); font-weight: bold; }
 
-/* ---------- Авторы ---------- */
-
-.authors { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
-.author-card {
-  display: flex;
-  gap: 22px;
-  background: var(--white);
-  border-radius: var(--radius);
-  padding: 28px;
-  box-shadow: var(--shadow);
-  align-items: center;
-}
-.author-avatar {
-  flex: none;
-  width: 84px; height: 84px;
-  border-radius: 50%;
-  background: var(--bg-soft);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 38px;
-}
-.author-card h3 { font-size: 20px; margin-bottom: 4px; }
-.author-card p { font-size: 14px; color: var(--muted); }
-
 /* ---------- FAQ ---------- */
 
 .faq { max-width: 760px; margin: 0 auto; }
@@ -450,8 +425,6 @@ a:hover { color: var(--primary-dark); }
   border: 2px solid rgba(255, 255, 255, 0.85);
 }
 .final-cta .btn-ghost:hover { background: rgba(255, 255, 255, 0.12); color: var(--white); }
-.final-cta .price-note { font-size: 15px; margin-top: 16px; opacity: 0.85; }
-.final-cta .price-old { color: rgba(255, 255, 255, 0.7); }
 
 /* ---------- Подвал ---------- */
 
@@ -498,7 +471,7 @@ a:hover { color: var(--primary-dark); }
   .hero-grid { grid-template-columns: 1fr; }
   .hero h1 { font-size: 34px; }
   .pains-grid, .features-grid, .reviews-grid, .steps, .plan-cards, .compare-grid { grid-template-columns: 1fr 1fr; }
-  .parts, .authors { grid-template-columns: 1fr; }
+  .parts { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 560px) {
