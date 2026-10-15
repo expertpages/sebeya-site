@@ -101,7 +101,12 @@ a:hover { color: var(--primary-dark); }
   text-decoration: none;
   letter-spacing: 3px;
 }
-.logo span { color: var(--primary); }
+.logo-dot {
+  width: 14px;
+  height: 14px;
+  margin-left: 6px;
+  vertical-align: baseline;
+}
 
 .main-nav { display: flex; gap: 26px; flex-wrap: wrap; }
 .main-nav a {
