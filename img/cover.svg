@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" width="640" height="800">
+  <!-- Фон -->
+  <rect x="0" y="0" width="640" height="800" fill="#F6EFE7"/>
+  <circle cx="34" cy="42" r="46" fill="#EAD9C8"/>
+  <circle cx="610" cy="764" r="60" fill="#EAD9C8"/>
+  <circle cx="618" cy="64" r="18" fill="#D9A5B3"/>
+  <circle cx="26" cy="742" r="12" fill="#D9A5B3"/>
+
+  <!-- Тень тетради -->
+  <rect x="84" y="96" width="460" height="600" rx="26" fill="#000000" opacity="0.10"/>
+
+  <!-- Обложка тетради -->
+  <rect x="76" y="86" width="460" height="600" rx="26" fill="#FBF6EF" stroke="#E2D4C3" stroke-width="2"/>
+
+  <!-- Спираль сверху -->
+  <g fill="none" stroke="#C9556D" stroke-width="7" stroke-linecap="round">
+    <path d="M140 88 a14 14 0 0 1 28 0"/>
+    <path d="M200 88 a14 14 0 0 1 28 0"/>
+    <path d="M260 88 a14 14 0 0 1 28 0"/>
+    <path d="M320 88 a14 14 0 0 1 28 0"/>
+    <path d="M380 88 a14 14 0 0 1 28 0"/>
+    <path d="M440 88 a14 14 0 0 1 28 0"/>
+  </g>
+
+  <!-- Полоса-акцент -->
+  <rect x="76" y="150" width="460" height="10" fill="#C9556D" rx="5"/>
+
+  <!-- Бренд -->
+  <text x="306" y="196" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26" letter-spacing="10" fill="#8A7A85">ТОЧКА</text>
+  <text x="306" y="220" text-anchor="middle" font-family="Trebuchet MS, Verdana, sans-serif" font-size="12" letter-spacing="4" fill="#B9A894">АВТОРСКАЯ ПСИХОЛОГИЧЕСКАЯ ТЕТРАДЬ</text>
+
+  <!-- Название -->
+  <text x="306" y="312" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="bold" fill="#33222E">Расставашка</text>
+
+  <!-- Иллюстрация: пунктирная дуга, самолётик и сердце -->
+  <path d="M140 452 C 210 404, 402 404, 462 446" fill="none" stroke="#A793C4" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 14"/>
+  <g transform="translate(452 444) rotate(-12)">
+    <path d="M0 26 L92 0 L33 42 L29 60 Z" fill="#7C6BA8"/>
+    <path d="M33 42 L29 60 L21 38 Z" fill="#C9556D"/>
+  </g>
+  <path d="M306 486 c -9 -24 -42 -20 -42 6 c 0 22 27 38 42 51 c 15 -13 42 -29 42 -51 c 0 -26 -33 -30 -42 -6 z" fill="#F3CFD8"/>
+
+  <!-- Подзаголовок -->
+  <text x="306" y="608" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="21" font-style="italic" fill="#6E5A66">Поставь точку —</text>
+  <text x="306" y="638" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="21" font-style="italic" fill="#6E5A66">и начни новую главу</text>
+
+  <!-- Автор -->
+  <text x="306" y="672" text-anchor="middle" font-family="Trebuchet MS, Verdana, sans-serif" font-size="13" letter-spacing="2" fill="#B9A894">АВТОРЫ — ПРАКТИКУЮЩИЕ ПСИХОЛОГИ</text>
+</svg>
