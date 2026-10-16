@@ -290,7 +290,7 @@ a:hover { color: var(--primary-dark); }
 
 .plan {
   position: relative;
-  background: var(--white) url("../img/podlozhka.jpg") center / cover no-repeat;
+  background: var(--white);
   border: 2px solid var(--line);
   border-radius: var(--radius);
   padding: 36px 32px;
