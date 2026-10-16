@@ -1,18 +1,20 @@
 /* ============================================================
-   ТОЧКА — бренд авторских психологических тетрадей
+   СЕБЕЯ — бренд авторских психологических путеводителей
+   Палитра из логотипа: нежно-голубоватый фон, чернильные
+   буквы, медная петля
    ============================================================ */
 
 :root {
-  --bg: #FAF5EE;
-  --bg-soft: #F3EADC;
-  --text: #33222E;
-  --primary: #C9556D;
-  --primary-dark: #A63D56;
-  --secondary: #7C6BA8;
-  --muted: #8A7A85;
-  --line: #E8DCCB;
+  --bg: #F2F7FA;
+  --bg-soft: #E7EEF4;
+  --text: #3E4756;
+  --primary: #A5623A;
+  --primary-dark: #8A4E2C;
+  --secondary: #556070;
+  --muted: #7E8A99;
+  --line: #D9E2EA;
   --white: #FFFFFF;
-  --shadow: 0 10px 30px rgba(51, 34, 46, 0.10);
+  --shadow: 0 10px 30px rgba(62, 71, 86, 0.10);
   --radius: 18px;
 }
 
@@ -56,7 +58,7 @@ a:hover { color: var(--primary-dark); }
 .btn-primary {
   background: var(--primary);
   color: var(--white);
-  box-shadow: 0 8px 20px rgba(201, 85, 109, 0.35);
+  box-shadow: 0 8px 20px rgba(165, 98, 58, 0.30);
 }
 .btn-primary:hover {
   background: var(--primary-dark);
@@ -69,7 +71,7 @@ a:hover { color: var(--primary-dark); }
   color: var(--primary);
   border: 2px solid var(--primary);
 }
-.btn-ghost:hover { background: rgba(201, 85, 109, 0.08); color: var(--primary-dark); }
+.btn-ghost:hover { background: rgba(165, 98, 58, 0.08); color: var(--primary-dark); }
 
 .btn-block { display: block; width: 100%; }
 .btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
@@ -80,7 +82,7 @@ a:hover { color: var(--primary-dark); }
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(250, 245, 238, 0.95);
+  background: rgba(242, 247, 250, 0.95);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--line);
 }
@@ -95,20 +97,14 @@ a:hover { color: var(--primary-dark); }
 
 .logo {
   display: inline-flex;
-  align-items: baseline;
-  gap: 6px;
+  align-items: center;
   flex-shrink: 0;
-  font-family: Georgia, serif;
-  font-size: 30px;
-  font-weight: bold;
-  color: var(--text);
   text-decoration: none;
-  letter-spacing: 3px;
-  white-space: nowrap;
 }
-.logo-dot {
-  width: 14px;
-  height: 14px;
+.logo img {
+  height: 34px;
+  width: auto;
+  display: block;
 }
 
 .main-nav { display: flex; gap: 26px; flex-wrap: wrap; }
@@ -204,7 +200,7 @@ a:hover { color: var(--primary-dark); }
   display: inline-flex;
   width: 42px; height: 42px;
   border-radius: 50%;
-  background: rgba(201, 85, 109, 0.12);
+  background: rgba(165, 98, 58, 0.14);
   color: var(--primary);
   align-items: center;
   justify-content: center;
@@ -490,8 +486,7 @@ a:hover { color: var(--primary-dark); }
   /* Шапка на телефоне: просторные отступы от краёв экрана */
   .site-header .container { padding: 0 24px; }
   .header-inner { padding: 10px 0; }
-  .logo { font-size: 22px; letter-spacing: 2px; }
-  .logo-dot { width: 10px; height: 10px; }
+  .logo img { height: 24px; }
   .header-cta { padding: 8px 14px; font-size: 13px; }
 
   /* Плашка-подпись: текст по центру, на двух строках */
