@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <!-- Логотип ТОЧКА: малиновая точка на прозрачном фоне
-       (рендерится на кремовом фоне сайта #FAF5EE) -->
-  <circle cx="32" cy="32" r="22" fill="#C9556D"/>
+  <!-- СЕБЕЯ: иконка вкладки — медный круг с буквой Я -->
+  <circle cx="32" cy="32" r="26" fill="#A5623A"/>
+  <text x="32" y="43" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="bold" fill="#F2F7FA">Я</text>
 </svg>
