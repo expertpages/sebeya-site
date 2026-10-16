@@ -24,7 +24,12 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
-  background: var(--bg);
+  background-color: var(--bg);
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
   color: var(--text);
   line-height: 1.65;
   font-size: 17px;
@@ -223,17 +228,36 @@ a:hover { color: var(--primary-dark); }
   box-shadow: var(--shadow);
   align-items: flex-start;
 }
-.part-num {
+.part-icon {
   flex: none;
-  width: 52px; height: 52px;
-  border-radius: 50%;
-  background: var(--secondary);
-  color: var(--white);
+  width: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Georgia, serif;
-  font-size: 24px;
+}
+.part-icon img { width: 100%; height: auto; display: block; }
+
+/* ---------- Декоративные полосы и разделители ---------- */
+
+.decor-band {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px 26px;
+}
+.decor-band img {
+  width: min(430px, 86vw);
+  height: auto;
+}
+
+.section-divider {
+  display: flex;
+  justify-content: center;
+  padding-top: 46px;
+}
+.section-divider img {
+  width: min(680px, 92%);
+  height: auto;
+  opacity: 0.9;
 }
 .part h3 { font-size: 19px; margin-bottom: 6px; }
 .part p { color: var(--muted); font-size: 15px; }
@@ -266,7 +290,7 @@ a:hover { color: var(--primary-dark); }
 
 .plan {
   position: relative;
-  background: var(--white);
+  background: var(--white) url("../img/podlozhka.jpg") center / cover no-repeat;
   border: 2px solid var(--line);
   border-radius: var(--radius);
   padding: 36px 32px;
@@ -376,7 +400,19 @@ a:hover { color: var(--primary-dark); }
 }
 .review .stars { color: #E8A93C; letter-spacing: 3px; font-size: 18px; }
 .review p { font-size: 15px; flex: 1; }
-.review .author { font-size: 14px; color: var(--muted); font-weight: bold; }
+.review-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--muted);
+  font-weight: bold;
+}
+.review-author img {
+  width: 44px;
+  height: auto;
+  display: block;
+}
 
 /* ---------- FAQ ---------- */
 
