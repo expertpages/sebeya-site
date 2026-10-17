@@ -47,6 +47,31 @@ function showToast(message) {
   toast._timer = setTimeout(() => toast.classList.remove("show"), 2600);
 }
 
+/* ---------- Аналитика: Яндекс.Метрика ---------- */
+
+const METRIKA_ID = 113660247; // счётчик Яндекс.Метрики
+
+/* Отправляем цель Метрики → переходим на оплату
+   (страховка: если ответ Метрики затянется, переход всё равно случится) */
+function reachGoalAndGo(goalId, url) {
+  let done = false;
+  const go = () => {
+    if (done) return;
+    done = true;
+    window.location.href = url;
+  };
+  if (typeof ym === "function") {
+    try {
+      ym(METRIKA_ID, "reachGoal", goalId, null, go);
+      setTimeout(go, 800);
+    } catch (err) {
+      go();
+    }
+  } else {
+    go();
+  }
+}
+
 /* ---------- Кнопки оплаты ---------- */
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -61,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
         showToast("Оплата скоро заработает — подключаем этот формат");
         return;
       }
-      window.location.href = url.replace(/\{SUM\}/g, String(product.price));
+      reachGoalAndGo("buy_" + btn.dataset.buy, url.replace(/\{SUM\}/g, String(product.price)));
     });
   });
 });
