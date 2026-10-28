@@ -17,13 +17,17 @@ const CONFIG = {
       id: "rasstavashka-pdf",
       name: "«Расставашка» PDF-путеводитель",
       price: 990,
-      url: "https://yookassa.ru/my/i/atD1O0ZRqwwE/l",
+      /* Куда ведёт кнопка на лендинге: страница-чекаут (сбор почты до оплаты) */
+      url: "checkout-pdf.html",
+      /* Прямая ссылка оплаты ЮKassa — её открывает страница-чекаут */
+      payUrl: "https://yookassa.ru/my/i/atD1O0ZRqwwE/l",
     },
     notebook: {
       id: "rasstavashka-print",
       name: "«Расставашка» печатный путеводитель",
       price: 1990,
-      url: "https://yookassa.ru/my/i/atD1dJ3iTJFM/l",
+      url: "checkout-notebook.html",
+      payUrl: "https://yookassa.ru/my/i/atD1dJ3iTJFM/l",
     },
   },
 };
