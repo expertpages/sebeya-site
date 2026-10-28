@@ -140,6 +140,17 @@
   display: block;
 }
 
+/* ---------- Нижняя кнопка заказа (под отзывами) ---------- */
+
+.checkout-bottom-cta {
+  padding: 64px 0 76px;
+  text-align: center;
+}
+.checkout-bottom-cta .btn {
+  font-size: 19px;
+  padding: 18px 46px;
+}
+
 /* ---------- Подвал чекаута ---------- */
 
 .checkout-footer {
