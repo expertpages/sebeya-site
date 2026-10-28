@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оформление заказа — печатная тетрадь «Расставашка» | Себея</title>
+  <meta name="description" content="Оформление заказа на печатную тетрадь «Расставашка» — 1 990 ₽. Доставка СДЭК или Почтой России по всей стране.">
+  <link rel="stylesheet" href="css/style.css?v=9">
+  <link rel="stylesheet" href="css/checkout.css?v=1">
+  <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+      (function(m,e,t,r,i,k,a){
+          m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+          m[i].l=1*new Date();
+          for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+          k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+      })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=113660247', 'ym');
+
+      ym(113660247, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <!-- /Yandex.Metrika counter -->
+</head>
+<body>
+  <noscript><div><img src="https://mc.yandex.ru/watch/113660247" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+  <!-- Шапка -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="img/logo.png" alt="Себея"></a>
+      <a class="header-cta" href="index.html">← Вернуться к описанию</a>
+    </div>
+  </header>
+
+  <main class="checkout">
+    <div class="container">
+      <p class="checkout-breadcrumb"><a href="index.html">Главная</a> <span>→ Оформление заказа</span></p>
+      <h1 class="checkout-title">Печатная тетрадь «Расставашка»</h1>
+      <p class="checkout-price">1 990 ₽ <span class="checkout-price-note">+ доставка по тарифам перевозчика</span></p>
+
+      <div class="checkout-grid">
+        <!-- Слева: обложка -->
+        <div class="checkout-cover">
+          <img src="img/cover.jpg" alt="Обложка печатной тетради «Расставашка» — «Бережно пережить расставание и вернуться к себе»">
+          <div class="checkout-trust">Не подошло? Вернём деньги в течение 14 дней</div>
+        </div>
+
+        <!-- Справа: форма заказа -->
+        <form class="checkout-form" data-checkout="notebook" novalidate>
+          <h2>Способ доставки</h2>
+          <div class="delivery-options">
+            <label class="delivery-option is-selected">
+              <input type="radio" name="delivery" value="СДЭК" checked>
+              <span class="delivery-name">СДЭК</span>
+              <span class="delivery-desc">до пункта выдачи, от 5 дней</span>
+            </label>
+            <label class="delivery-option">
+              <input type="radio" name="delivery" value="Почта России">
+              <span class="delivery-name">Почта России</span>
+              <span class="delivery-desc">до отделения, от 5 дней</span>
+            </label>
+          </div>
+
+          <div class="field">
+            <label for="f-name">Ваше имя</label>
+            <input id="f-name" name="name" type="text" required placeholder="Как к вам обращаться" autocomplete="name">
+            <span class="field-error">Подскажите имя — так удобнее общаться</span>
+          </div>
+          <div class="field">
+            <label for="f-phone">Телефон</label>
+            <input id="f-phone" name="phone" type="tel" required placeholder="+7 (900) 000-00-00" autocomplete="tel">
+            <span class="field-error">Нужен телефон — для подтверждения заказа и доставки</span>
+          </div>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" required placeholder="придёт чек и трек-номер" autocomplete="email">
+            <span class="field-error">Проверьте адрес почты — на неё придёт чек</span>
+          </div>
+          <div class="field">
+            <label for="f-city">Город</label>
+            <input id="f-city" name="city" type="text" required placeholder="Город доставки" autocomplete="address-level2">
+            <span class="field-error">Подскажите город доставки</span>
+          </div>
+          <div class="field">
+            <label for="f-address">Адрес</label>
+            <input id="f-address" name="address" type="text" required placeholder="Улица, дом, квартира" autocomplete="street-address">
+            <span class="field-error">Нужен адрес — пункт выдачи или отделение подберём рядом</span>
+          </div>
+          <div class="field">
+            <label for="f-zip">Индекс</label>
+            <input id="f-zip" name="zip" type="text" required inputmode="numeric" placeholder="123456" autocomplete="postal-code">
+            <span class="field-error">Индекс нужен Почте России, для СДЭК — не обязателен, но помогает</span>
+          </div>
+          <div class="field">
+            <label for="f-comment">Комментарий <span class="optional">(необязательно)</span></label>
+            <input id="f-comment" name="comment" type="text" placeholder="Например: удобное время для звонка">
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Оформить заказ — 1 990 ₽</button>
+          <p class="checkout-small">Доставка по всей России. Срок доставки — от 5 дней в зависимости от региона. После отправки пришлём трек-номер на email.</p>
+        </form>
+      </div>
+
+      <!-- Что вас ждёт внутри -->
+      <section class="section">
+        <h2 class="section-title">Что вас ждёт внутри</h2>
+        <!-- Текст от ChatGPT (финальная версия) -->
+        <div class="checkout-text">
+          <p>Перед тобой «Расставашка» — авторская тетрадь-путеводитель, в которой есть место для твоих чувств и записей о расставании.</p>
+
+          <p>Внутри — 30 страниц практики и путь из шести частей: от «всё разорвалось» до «новая глава». 80% объёма занимают упражнения на бумаге, а не теория. Для занятий предусмотрено по 15–20 минут в день: можно выделить это время для себя, когда тебе удобно.</p>
+
+          <p>Программа рассчитана на 14 дней, но <b>у твоих переживаний нет срока</b>. Эти две недели — приглашение к заботе о себе. Ты можешь идти в своём темпе, делать паузы и продолжать, когда будешь готова.</p>
+
+          <p>Печатная тетрадь формата А5 стоит 1 990 ₽. На плотной бумаге можно писать ручкой и рисовать маркерами. Есть гарантия возврата 14 дней. Тетрадь не заменяет специалиста: если одной тяжело, обратиться к психологу — тоже забота о себе.</p>
+
+          <p>Тетрадь останется с тобой: возвращаться к её практикам можно всегда, когда тебе этого захочется.</p>
+        </div>
+      </section>
+
+      <!-- Отзывы -->
+      <section class="section section-alt">
+        <h2 class="section-title">Отзывы покупательниц</h2>
+        <div class="reviews-grid">
+          <!-- Отзывы: файлы в img/reviews/ (otziv-1.png … otziv-3.png).
+               Новый отзыв — добавь <figure class="review-card"><img src="img/reviews/otziv-N.png" alt="…"></figure> -->
+          <figure class="review-card">
+            <img src="img/reviews/otziv-2.png" alt="Скрин отзыва: «я уже на 11 дне заполнения, чувствую, что мне становится легче»">
+          </figure>
+          <figure class="review-card">
+            <img src="img/reviews/otziv-1.png" alt="Скрин отзыва: «начала заполнять, и тут пошло… слёзы, потом стало легче. Я хотя бы больше не залипаю на его странице»">
+          </figure>
+          <figure class="review-card">
+            <img src="img/reviews/otziv-3.png" alt="Скрин отзыва: «совсем думать о нём не перестала, но чувствую себя лучше»">
+          </figure>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="checkout-footer">
+    <div class="container">
+      <a href="index.html">← Вернуться к описанию тетради</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>
