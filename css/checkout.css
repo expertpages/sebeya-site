@@ -1,0 +1,173 @@
+/* ============================================================
+   СЕБЕЯ — стили чекаут-страниц (checkout-notebook.html, checkout-pdf.html)
+   Палитра и кнопки наследуются из style.css
+   ============================================================ */
+
+/* ---------- Хлебная крошка и заголовок ---------- */
+
+.checkout { padding: 36px 0 60px; }
+
+.checkout-breadcrumb {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+.checkout-breadcrumb a { color: var(--muted); }
+.checkout-breadcrumb span { color: var(--primary); }
+
+.checkout-title { font-size: 36px; margin-bottom: 10px; }
+
+.checkout-price { font-size: 22px; color: var(--primary); font-weight: bold; margin-bottom: 34px; }
+.checkout-price .checkout-price-note { font-size: 14px; color: var(--muted); font-weight: normal; }
+
+/* ---------- Сетка: обложка + форма ---------- */
+
+.checkout-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.checkout-cover img {
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  width: 100%;
+}
+
+.checkout-trust {
+  margin-top: 16px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: var(--secondary);
+  text-align: center;
+}
+
+/* ---------- Форма ---------- */
+
+.checkout-form {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px 28px 22px;
+  box-shadow: var(--shadow);
+}
+
+.checkout-form h2 { font-size: 22px; margin-bottom: 16px; }
+
+.delivery-options { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px; }
+
+.delivery-option {
+  display: block;
+  border: 2px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 14px;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+.delivery-option:hover { border-color: var(--primary); }
+.delivery-option input { margin-right: 8px; accent-color: var(--primary); }
+.delivery-option.is-selected {
+  border-color: var(--primary);
+  background: rgba(165, 98, 58, 0.06);
+}
+.delivery-name { font-weight: bold; display: block; }
+.delivery-desc { font-size: 13px; color: var(--muted); display: block; margin-top: 2px; }
+
+.field { margin-bottom: 16px; }
+.field label {
+  display: block;
+  font-size: 14px;
+  color: var(--secondary);
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+.field .optional { color: var(--muted); font-weight: normal; font-size: 13px; }
+.field input {
+  width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+  color: var(--text);
+  background: var(--bg);
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  padding: 12px 14px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.field input:focus { border-color: var(--primary); }
+.field input.is-invalid { border-color: #C0392B; }
+
+.field-error { display: none; font-size: 13px; color: #C0392B; margin-top: 5px; }
+.field-error.is-visible { display: block; }
+
+.checkout-small {
+  font-size: 13px;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 12px;
+  line-height: 1.5;
+}
+
+/* ---------- Текст «что вас ждёт» ---------- */
+
+.checkout-text {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 17px;
+  color: var(--text);
+  line-height: 1.75;
+}
+.checkout-text p + p { margin-top: 14px; }
+.checkout-text ul { margin: 14px 0 0 22px; }
+.checkout-text li { margin-bottom: 6px; }
+.checkout-text .accent { color: var(--primary); font-weight: bold; }
+
+/* ---------- Отзывы: сетка — все три карточки видны сразу ---------- */
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  align-items: center; /* середины карточек идут по одной невидимой полосе */
+}
+
+.review-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 12px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.review-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+/* ---------- Подвал чекаута ---------- */
+
+.checkout-footer {
+  border-top: 1px solid var(--line);
+  padding: 22px 0;
+  font-size: 14px;
+  color: var(--muted);
+  text-align: center;
+}
+.checkout-footer a { color: var(--muted); }
+
+/* ---------- Адаптив ---------- */
+
+@media (max-width: 780px) {
+  .checkout-grid { grid-template-columns: 1fr; gap: 28px; }
+  .checkout-cover { max-width: 420px; margin: 0 auto; }
+  .checkout-title { font-size: 30px; }
+  .checkout-form { padding: 20px 18px 16px; }
+  .reviews-grid { grid-template-columns: 1fr; }
+}
