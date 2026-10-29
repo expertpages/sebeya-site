@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Себея — путеводитель «Расставашка»: пережить расставание за 2 недели</title>
   <meta name="description" content="«Расставашка» — авторский путеводитель после расставания: 118 страниц, путь на 14 дней, 80% объёма — упражнения. PDF за 990 ₽ или печатный за 1 990 ₽.">
-  <link rel="stylesheet" href="css/style.css?v=13">
+  <link rel="stylesheet" href="css/style.css?v=14">
   <link rel="icon" type="image/svg+xml" href="img/logo.svg">
 
   <!-- Yandex.Metrika counter -->
@@ -29,12 +29,13 @@
     <div class="container header-inner">
       <a class="logo" href="index.html"><img src="img/logo.png" alt="Себея"></a>
       <nav class="main-nav">
-        <a href="#for-whom">Кому поможет</a>
         <a href="#inside">Что внутри</a>
+        <a href="#for-whom">Кому поможет</a>
         <a href="#price">Цены</a>
         <a href="#reviews">Отзывы</a>
         <a href="#faq">Вопросы</a>
       </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Меню" aria-expanded="false">☰</button>
       <a class="header-cta" href="#price">Выбрать формат</a>
     </div>
   </header>
@@ -61,46 +62,6 @@
   <!-- Декоративная полоса после hero -->
   <section class="decor-band" aria-hidden="true">
     <img src="img/hero-art.png" alt="">
-  </section>
-
-  <!-- Кому поможет -->
-  <section class="section section-alt" id="for-whom">
-    <div class="container">
-      <h2 class="section-title">Узнаёшь себя?</h2>
-      <p class="section-sub">Если хотя бы два пункта про тебя — «Расставашка» создана для тебя</p>
-      <div class="pains-grid">
-        <div class="pain">
-          <div class="num">1</div>
-          <h3>Постоянно думаю о нём</h3>
-          <p>Навязчивые мысли, прокручивание диалогов и желание написать «в последний раз».</p>
-        </div>
-        <div class="pain">
-          <div class="num">2</div>
-          <h3>Слежу за его жизнью</h3>
-          <p>Открываю его соцсети по десять раз в день и ищу повод «случайно» встретиться.</p>
-        </div>
-        <div class="pain">
-          <div class="num">3</div>
-          <h3>Ни в чём нет смысла</h3>
-          <p>Будущее кажется туманным, а всё, что радовало раньше, больше не приносит сил.</p>
-        </div>
-        <div class="pain">
-          <div class="num">4</div>
-          <h3>Чувствую себя никчёмной</h3>
-          <p>«Со мной что-то не так», «я недостаточно хороша» — знакомый внутренний голос.</p>
-        </div>
-        <div class="pain">
-          <div class="num">5</div>
-          <h3>Обида, вина и злость</h3>
-          <p>Тяжёлые эмоции накрывают волной, и непонятно, как с ними быть дальше.</p>
-        </div>
-        <div class="pain">
-          <div class="num">6</div>
-          <h3>Боюсь снова доверять</h3>
-          <p>Страшно впустить кого-то нового — вдруг история повторится.</p>
-        </div>
-      </div>
-    </div>
   </section>
 
   <!-- Что внутри -->
@@ -156,7 +117,7 @@
   </section>
 
   <!-- Пролистайте тетрадь (бесплатная часть) -->
-  <section class="section">
+  <section class="section section-alt">
     <div class="container">
       <h2 class="section-title">Пролистайте тетрадь</h2>
       <div class="preview-row">
@@ -171,6 +132,46 @@
       <p class="preview-actions">
         <a class="btn btn-primary" href="free-preview.pdf" download>Скачать бесплатную часть — PDF</a>
       </p>
+    </div>
+  </section>
+
+  <!-- Кому поможет -->
+  <section class="section" id="for-whom">
+    <div class="container">
+      <h2 class="section-title">Узнаёшь себя?</h2>
+      <p class="section-sub">Если хотя бы два пункта про тебя — «Расставашка» создана для тебя</p>
+      <div class="pains-grid">
+        <div class="pain">
+          <div class="num">1</div>
+          <h3>Постоянно думаю о нём</h3>
+          <p>Навязчивые мысли, прокручивание диалогов и желание написать «в последний раз».</p>
+        </div>
+        <div class="pain">
+          <div class="num">2</div>
+          <h3>Слежу за его жизнью</h3>
+          <p>Открываю его соцсети по десять раз в день и ищу повод «случайно» встретиться.</p>
+        </div>
+        <div class="pain">
+          <div class="num">3</div>
+          <h3>Ни в чём нет смысла</h3>
+          <p>Будущее кажется туманным, а всё, что радовало раньше, больше не приносит сил.</p>
+        </div>
+        <div class="pain">
+          <div class="num">4</div>
+          <h3>Чувствую себя никчёмной</h3>
+          <p>«Со мной что-то не так», «я недостаточно хороша» — знакомый внутренний голос.</p>
+        </div>
+        <div class="pain">
+          <div class="num">5</div>
+          <h3>Обида, вина и злость</h3>
+          <p>Тяжёлые эмоции накрывают волной, и непонятно, как с ними быть дальше.</p>
+        </div>
+        <div class="pain">
+          <div class="num">6</div>
+          <h3>Боюсь снова доверять</h3>
+          <p>Страшно впустить кого-то нового — вдруг история повторится.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -339,6 +340,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=10"></script>
+  <script src="js/main.js?v=11"></script>
 </body>
 </html>
