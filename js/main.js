@@ -123,8 +123,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const dotEls = dots.querySelectorAll(".dot");
 
     function update() {
-      const step = cards[0].getBoundingClientRect().width + 18; /* ширина карточки + отступ */
-      const idx = Math.min(cards.length - 1, Math.max(0, Math.round(row.scrollLeft / step)));
+      /* активная точка — карточка, чей центр ближе к центру видимой части
+         ( карточки прилипают по центру, поэтому считаем центры, а не левый край) */
+      const rowRect = row.getBoundingClientRect();
+      const center = row.scrollLeft + row.clientWidth / 2;
+      let idx = 0;
+      let bestDist = Infinity;
+      cards.forEach((card, i) => {
+        const rect = card.getBoundingClientRect();
+        const cardCenter = (rect.left - rowRect.left) + row.scrollLeft + rect.width / 2;
+        const dist = Math.abs(cardCenter - center);
+        if (dist < bestDist) { bestDist = dist; idx = i; }
+      });
       dotEls.forEach((d, i) => {
         d.classList.toggle("active", i === idx);
         d.classList.toggle("seen", i < idx);
