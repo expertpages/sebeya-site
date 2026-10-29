@@ -76,6 +76,28 @@ function reachGoalAndGo(goalId, url) {
   }
 }
 
+/* ---------- Мобильное меню-гамбургер ---------- */
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("navToggle");
+  const nav = document.querySelector(".main-nav");
+  if (!toggle || !nav) return;
+
+  toggle.addEventListener("click", () => {
+    const open = nav.classList.toggle("open");
+    toggle.textContent = open ? "✕" : "☰";
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+
+  nav.querySelectorAll("a").forEach((a) => {
+    a.addEventListener("click", () => {
+      nav.classList.remove("open");
+      toggle.textContent = "☰";
+      toggle.setAttribute("aria-expanded", "false");
+    });
+  });
+});
+
 /* ---------- Кнопки оплаты ---------- */
 
 document.addEventListener("DOMContentLoaded", () => {
