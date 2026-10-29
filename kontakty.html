@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты | Себея</title>
+  <meta name="description" content="Контакты бренда Себея: почта для вопросов о заказе, оплате и доставке тетради «Расставашка».">
+  <link rel="stylesheet" href="css/style.css?v=9">
+  <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+  <style>
+    /* Контакты — единственная страница с собственной мини-вёрсткой */
+    .contacts-wrap { padding: 70px 0 90px; }
+    .contacts-card {
+      max-width: 640px;
+      margin: 0 auto;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 44px 40px;
+      text-align: center;
+    }
+    .contacts-card h1 { font-size: 34px; margin-bottom: 14px; }
+    .contacts-lead {
+      font-size: 17px;
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+    .contacts-mail {
+      display: block;
+      font-size: 24px;
+      font-weight: bold;
+      color: var(--primary);
+      margin-bottom: 26px;
+      word-break: break-all;
+    }
+    .contacts-mail:hover { color: var(--primary-dark); }
+    .contacts-note {
+      font-size: 14px;
+      color: var(--muted);
+      margin-top: 24px;
+      line-height: 1.6;
+    }
+    @media (max-width: 600px) {
+      .contacts-card { padding: 32px 22px; }
+      .contacts-card h1 { font-size: 28px; }
+      .contacts-mail { font-size: 20px; }
+    }
+  </style>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+      (function(m,e,t,r,i,k,a){
+          m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+          m[i].l=1*new Date();
+          for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+          k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+      })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=113660247', 'ym');
+
+      ym(113660247, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <!-- /Yandex.Metrika counter -->
+</head>
+<body>
+  <noscript><div><img src="https://mc.yandex.ru/watch/113660247" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+  <!-- Шапка -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="img/logo.png" alt="Себея"></a>
+      <a class="header-cta" href="index.html">← На главную</a>
+    </div>
+  </header>
+
+  <main class="contacts-wrap">
+    <div class="container">
+      <div class="contacts-card">
+        <h1>Контакты</h1>
+        <p class="contacts-lead">Если что-то пошло не так — напишите нам на почту.<br>Мы рядом и ответим так быстро, как сможем.</p>
+
+        <a class="contacts-mail" href="mailto:sebeya@mail.ru">sebeya@mail.ru</a>
+
+        <a class="btn btn-primary" href="mailto:sebeya@mail.ru">Написать на почту</a>
+
+        <p class="contacts-note">
+          Сюда можно писать по любому вопросу: заказ и его статус, оплата,<br>
+          доставка, вопросы о тетради «Расставашка» — или просто сказать «привет».
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2026 СЕБЕЯ — бренд авторских психологических путеводителей</div>
+      <div class="footer-links">
+        <a href="index.html">Главная</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=10"></script>
+</body>
+</html>
