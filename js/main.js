@@ -98,6 +98,44 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+/* ---------- Точки-индикаторы под «Пролистайте тетрадь» ---------- */
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".preview-row").forEach((row) => {
+    const cards = row.querySelectorAll(".preview-card");
+    if (!cards.length) return;
+
+    const dots = document.createElement("div");
+    dots.className = "preview-dots";
+
+    cards.forEach((card, i) => {
+      const d = document.createElement("button");
+      d.type = "button";
+      d.className = "dot";
+      d.setAttribute("aria-label", "Кадр " + (i + 1));
+      d.addEventListener("click", () => {
+        card.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+      });
+      dots.appendChild(d);
+    });
+
+    row.insertAdjacentElement("afterend", dots);
+    const dotEls = dots.querySelectorAll(".dot");
+
+    function update() {
+      const step = cards[0].getBoundingClientRect().width + 18; /* ширина карточки + отступ */
+      const idx = Math.min(cards.length - 1, Math.max(0, Math.round(row.scrollLeft / step)));
+      dotEls.forEach((d, i) => {
+        d.classList.toggle("active", i === idx);
+        d.classList.toggle("seen", i < idx);
+      });
+    }
+
+    row.addEventListener("scroll", () => window.requestAnimationFrame(update));
+    update();
+  });
+});
+
 /* ---------- Кнопки оплаты ---------- */
 
 document.addEventListener("DOMContentLoaded", () => {
