@@ -466,14 +466,61 @@ a:hover { color: var(--primary-dark); }
 }
 .final-cta .btn-ghost:hover { background: rgba(255, 255, 255, 0.12); color: var(--white); }
 
-/* ---------- Подвал ---------- */
+/* ---------- Подвал (тёмный, три колонки) ---------- */
 
 .site-footer {
-  border-top: 1px solid var(--line);
-  padding: 40px 0;
-  color: var(--muted);
+  background: var(--text);
+  padding: 56px 0 44px;
+  color: rgba(242, 247, 250, 0.65);
   font-size: 14px;
 }
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 44px;
+  align-items: start;
+}
+
+.footer-logo {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+.footer-tagline {
+  margin: 0 0 20px;
+  color: rgba(242, 247, 250, 0.55);
+  font-size: 15px;
+}
+.footer-copy { font-size: 13px; color: rgba(242, 247, 250, 0.45); margin: 0; }
+
+.footer-col h4 {
+  color: rgba(242, 247, 250, 0.5);
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.footer-links { display: flex; flex-direction: column; gap: 11px; }
+.footer-links a { color: rgba(242, 247, 250, 0.85); text-decoration: none; font-size: 15px; }
+.footer-links a:hover { color: var(--white); }
+
+.footer-mail {
+  display: block;
+  font-size: 21px;
+  font-weight: bold;
+  color: var(--white);
+  text-decoration: none;
+  word-break: break-all;
+  margin-bottom: 10px;
+}
+.footer-mail:hover { text-decoration: underline; color: var(--white); }
+.footer-note { font-size: 13px; color: rgba(242, 247, 250, 0.55); margin: 0; line-height: 1.55; }
+
+/* Старая структура подвала (страница «Контакты») на тёмном фоне */
 .footer-inner {
   display: flex;
   justify-content: space-between;
@@ -481,9 +528,11 @@ a:hover { color: var(--primary-dark); }
   gap: 20px;
   flex-wrap: wrap;
 }
-.footer-links { display: flex; gap: 22px; }
-.footer-links a { color: var(--muted); text-decoration: none; }
-.footer-links a:hover { color: var(--primary); }
+.footer-inner .footer-links { flex-direction: row; gap: 22px; }
+
+@media (max-width: 780px) {
+  .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+}
 
 /* ---------- Уведомления ---------- */
 
