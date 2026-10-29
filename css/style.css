@@ -594,6 +594,26 @@ a:hover { color: var(--primary-dark); }
   margin-top: 26px;
 }
 
+/* Точки-«страницы» под пролистыванием: активная — медная, будущие — бледные */
+.preview-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+.preview-dots .dot {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #C6D2DC;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.preview-dots .dot.seen { background: #9FAFBD; }
+.preview-dots .dot.active { background: var(--primary); transform: scale(1.2); }
+
 /* ---------- Уведомления ---------- */
 
 .toast {
