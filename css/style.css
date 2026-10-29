@@ -132,6 +132,21 @@ a:hover { color: var(--primary-dark); }
 }
 .header-cta:hover { background: var(--primary-dark); color: var(--white); transform: translateY(-1px); }
 
+/* Кнопка-гамбургер (видна только на телефоне) */
+.nav-toggle {
+  display: none;
+  width: 42px;
+  height: 42px;
+  border: 2px solid var(--primary);
+  border-radius: 12px;
+  background: transparent;
+  color: var(--primary);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
 /* ---------- Hero ---------- */
 
 .hero { padding: 70px 0 80px; }
@@ -602,7 +617,7 @@ a:hover { color: var(--primary-dark); }
 /* ---------- Адаптивность ---------- */
 
 @media (max-width: 900px) {
-  .hero-grid { grid-template-columns: 1fr; }
+  .hero-grid { grid-template-columns: 1fr; gap: 28px; }
   .hero h1 { font-size: 34px; }
   .pains-grid, .features-grid, .reviews-grid, .steps, .plan-cards, .compare-grid { grid-template-columns: 1fr 1fr; }
   .parts { grid-template-columns: 1fr; }
@@ -610,15 +625,41 @@ a:hover { color: var(--primary-dark); }
 
 @media (max-width: 560px) {
   .pains-grid, .features-grid, .reviews-grid, .steps, .plan-cards, .compare-grid { grid-template-columns: 1fr; }
-  .main-nav { display: none; }
   .compare-gain { gap: 14px; }
 
-  /* Шапка на телефоне: просторные отступы от краёв экрана */
+  /* Шапка на телефоне: гамбургер вместо меню */
+  .main-nav { display: none; }
+  .nav-toggle { display: block; }
+  .main-nav.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    padding: 8px 24px 18px;
+    gap: 16px;
+    border-bottom: 1px solid var(--line);
+    box-shadow: var(--shadow);
+    z-index: 60;
+  }
+  .main-nav.open a { font-size: 17px; }
+
   .site-header .container { padding: 0 24px; }
   .header-inner { padding: 10px 0; }
   .logo img { height: 24px; }
   .header-cta { padding: 8px 14px; font-size: 13px; }
 
-  /* Плашка-подпись: текст по центру, на двух строках */
-  .eyebrow { display: block; text-align: center; }
+  /* Первый экран телефона: кнопки и край обложки видны без прокрутки */
+  .hero { padding: 26px 0 34px; }
+  .hero h1 { font-size: 24px; margin-bottom: 10px; }
+  .lead { font-size: 14px; line-height: 1.55; margin-bottom: 16px; }
+  .hero-actions { gap: 10px; margin-bottom: 10px; }
+  .hero-actions .btn { flex: 1 1 auto; padding: 13px 14px; font-size: 14.5px; }
+  .hero-note { font-size: 12px; margin-bottom: 0; }
+  .hero-image img { margin-top: 2px; }
+
+  /* Плашка-подпись: текст по центру, компактно */
+  .eyebrow { display: block; text-align: center; font-size: 11px; padding: 5px 12px; letter-spacing: 1.4px; margin-bottom: 12px; }
 }
