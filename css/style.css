@@ -641,6 +641,10 @@ a:hover { color: var(--primary-dark); }
   .hero h1 { font-size: 34px; }
   .pains-grid, .features-grid, .reviews-grid, .steps, .plan-cards, .compare-grid { grid-template-columns: 1fr 1fr; }
   .parts { grid-template-columns: 1fr; }
+
+  /* Декоративная вертикальная иллюстрация после hero — только для широких экранов:
+     на телефоне занимает пол-экрана пустотой, поэтому скрываем */
+  .decor-band { display: none; }
 }
 
 @media (max-width: 560px) {
