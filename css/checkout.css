@@ -127,6 +127,16 @@
   padding-left: 32px;
   text-indent: -32px; /* перенос строки выравнивается под текст, а не под эмодзи */
 }
+.checkout-text .inside-preview {
+  text-align: center;
+  margin: 18px 0 8px;
+}
+.checkout-text .inside-preview img {
+  max-width: 420px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
 
 /* ---------- Отзывы: сетка — все три карточки видны сразу ---------- */
 
