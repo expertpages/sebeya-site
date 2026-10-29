@@ -549,12 +549,17 @@ a:hover { color: var(--primary-dark); }
 
 .preview-card {
   flex: 0 0 auto;
-  width: 360px;
-  max-width: 84vw;
+  width: 460px;
+  max-width: 88vw;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   scroll-snap-align: center;
   background: var(--white);
+}
+
+.preview-actions {
+  text-align: center;
+  margin-top: 26px;
 }
 
 /* ---------- Уведомления ---------- */
