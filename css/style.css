@@ -266,7 +266,7 @@ a:hover { color: var(--primary-dark); }
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 22px;
 }
 .feature {
@@ -388,7 +388,24 @@ a:hover { color: var(--primary-dark); }
 
 /* ---------- Отзывы ---------- */
 
-.reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; align-items: center; }
+
+/* Карточки реальных отзывов (скрины, как на чекаутах) */
+.review-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 12px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.review-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
 .review {
   background: var(--white);
   border-radius: var(--radius);
