@@ -534,6 +534,29 @@ a:hover { color: var(--primary-dark); }
   .footer-grid { grid-template-columns: 1fr; gap: 30px; }
 }
 
+/* ---------- Пролистайте тетрадь (карточки презентации) ---------- */
+
+.preview-row {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  padding: 10px 4px 22px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.preview-row::-webkit-scrollbar { height: 8px; }
+.preview-row::-webkit-scrollbar-thumb { background: var(--line); border-radius: 4px; }
+
+.preview-card {
+  flex: 0 0 auto;
+  width: 360px;
+  max-width: 84vw;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  scroll-snap-align: center;
+  background: var(--white);
+}
+
 /* ---------- Уведомления ---------- */
 
 .toast {
