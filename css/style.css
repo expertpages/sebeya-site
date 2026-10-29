@@ -673,7 +673,9 @@ a:hover { color: var(--primary-dark); }
   .site-header .container { padding: 0 24px; }
   .header-inner { padding: 10px 0; }
   .logo img { height: 24px; }
-  .header-cta { padding: 8px 14px; font-size: 13px; }
+
+  /* На телефоне кнопку «Выбрать формат» убираем — гамбургер встаёт у правого края */
+  .header-cta { display: none; }
 
   /* Первый экран телефона: кнопки и край обложки видны без прокрутки */
   .hero { padding: 26px 0 34px; }
