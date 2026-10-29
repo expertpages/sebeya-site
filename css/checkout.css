@@ -104,12 +104,12 @@
 /* ---------- Текст «что вас ждёт» ---------- */
 
 .checkout-text {
-  max-width: 720px;
+  max-width: none;
   margin: 0 auto;
   font-size: 17px;
   color: var(--text);
   line-height: 1.75;
-  text-align: left; /* десктоп: блок по центру страницы, текст по левому краю */
+  text-align: left; /* текст на всю ширину контейнера, по левому краю */
 }
 .checkout-text p + p { margin-top: 14px; }
 .checkout-text .accent { color: var(--primary); font-weight: bold; }
@@ -137,6 +137,32 @@
   border-radius: 12px;
   box-shadow: var(--shadow);
 }
+
+/* ---------- Блок «Что будет после заказа» (под обложкой на печати) ---------- */
+
+.checkout-after {
+  margin-top: 16px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px 20px;
+  font-size: 14px;
+  color: var(--secondary);
+}
+.checkout-after h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+.checkout-after ol { margin: 0; padding-left: 18px; }
+.checkout-after li { margin-bottom: 7px; line-height: 1.5; }
+.checkout-after li:last-child { margin-bottom: 0; }
+.checkout-after .after-mail {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--line);
+}
+.checkout-after .after-mail a { color: var(--primary); font-weight: bold; text-decoration: none; }
 
 /* ---------- Отзывы: сетка — все три карточки видны сразу ---------- */
 
