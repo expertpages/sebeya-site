@@ -160,3 +160,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+/* ---------- Видео-история: своя кнопка Play ---------- */
+
+(function () {
+  const wrap = document.querySelector(".story-player");
+  if (!wrap) return;
+  const video = wrap.querySelector("video");
+  const playBtn = wrap.querySelector(".story-play");
+
+  playBtn.addEventListener("click", function () {
+    video.play();
+  });
+  video.addEventListener("play", function () { wrap.classList.add("playing"); });
+  video.addEventListener("pause", function () { wrap.classList.remove("playing"); });
+  video.addEventListener("ended", function () { wrap.classList.remove("playing"); });
+})();
