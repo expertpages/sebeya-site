@@ -12,7 +12,7 @@ const CONFIG = {
     pdf: {
       id: "rasstavashka-pdf",
       name: "«Расставашка» PDF-путеводитель",
-      price: 990,
+      price: 490,
       /* Оплата Lava.Top: PDF-версия */
       url: "https://app.lava.top/products/d0a444b6-ec53-4417-826b-59d496d91623",
       payUrl: "https://app.lava.top/products/d0a444b6-ec53-4417-826b-59d496d91623",
@@ -20,7 +20,7 @@ const CONFIG = {
     notebook: {
       id: "rasstavashka-print",
       name: "«Расставашка» печатный путеводитель",
-      price: 1990,
+      price: 990,
       /* Оплата Lava.Top: печатная тетрадь */
       url: "https://app.lava.top/products/44dd7d06-3316-44d5-84ea-d45d9c98f136",
       payUrl: "https://app.lava.top/products/44dd7d06-3316-44d5-84ea-d45d9c98f136",
